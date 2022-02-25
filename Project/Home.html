@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  background: #9cf8dc;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: rgb(248, 248, 248);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #9cf8dc;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <script>
+    let d = new Date();
+    document.body.innerHTML = "<h1>Horário atual:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+    "</h1>"
+    </script>
+
+<div class="header">
+  <h1>Amor de Patinhas</h1>
+  <p><strong>Protetores que amam os animais.</strong></p>
+</div>
+
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="Doações.html">Doações</a>
+  <a href="Contate-nos.html">Contate-nos</a>
+  <a href="https://www.instagram.com/amordepatinhas2/" style="float:right">Nosso instagram</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Os animais precisam de ajuda!</h2>
+   
+      <div class="fakeimg" style="height: 400px;"><img src="https://th.bing.com/th/id/R.fddadfd2bc3c246cbd760b6f734bef76?rik=RYNctp6XkMgubw&riu=http%3a%2f%2fchacarapet.com.br%2fblog%2fwp-content%2fuploads%2f2020%2f06%2fgato-e-cachorro-juntos-750x410.png&ehk=02l62BKyo%2fAXpdOoo5UqDtLvnakBQeiwaZ2twwNyGy0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" width="850" height="380"></div>
+      <p>Se você também ama os animais, mas não sabe como ajudá-los, junte-se a nós!</p>
+    </div>
+    <div class="card">
+      <h2> Você sabia que é necessário castrar seu animalzinho?</h2>
+      <div class="fakeimg" style="height:400px;"><img src="https://i1.wp.com/falandodepets.com/wp-content/uploads/2017/07/post-surgery-care-web-1030x579.jpg?w=1024&ssl=1"width="850" height="380"></div>
+      <h2>O que é a Castração?</h2>
+      <p>A castração consiste em uma cirurgia feita em cães e gatos, fêmeas e machos, para impedir que se reproduzam sem controle. Para cada bebê que nasce, 15 cães e 45 gatos também podem nascer. Em seis anos, uma cadela e seus descendentes podem gerar 64 mil filhotes!! No caso das gatas esse número é ainda maior. Isso explica o grave problema da superpopulação desses animais, com a morte de milhares deles. Isso pode ser evitado por meio da informação.</p>
+      <br>
+      <h2>Como funciona?</h2>
+      <p>Consiste na retirada do útero, trompas e ovários, no caso das fêmeas. Nos machos, na retirada dos testículos.
+        A cirurgia, feita com anestesia geral, é simples mas deve ser executada apenas por veterinários devidamente habilitados. Em torno de uma semana o animal estará totalmente recuperado.
+        A castração pode ser feita a partir dos 2 meses de idade. Para as fêmeas é recomendado castrar antes do primeiro cio.</p>
+       <br>
+       <h2>Vantagens da Castração:</h2>
+       <p>1) Diminui drasticamente o risco de doenças nas vias uterinas, do câncer de mama, útero, próstata e testículos;
+        <br>
+        <br>
+        2) Elimina a Gravidez Psicológica, comum em algumas fêmeas após o término do cio, o que ocasiona aumento das mamas (muitas vezes com edema), a produção de leite e irritabilidade excessiva;
+        <br>
+        <br>
+        3) Elimina o risco do câncer dos órgão genitais;
+        <br>
+        <br>
+        4) Diminui o risco das fugas e brigas, que podem acarretar acidentes graves e até fatais;
+        <br>
+        <br>
+        5) Acaba com os latidos, uivos e miados excessivos que ocorrem por ocasião do cio;
+        <br>
+        <br>
+        6) Elimina os estados de excitação por falta de cruzamento (e o embaraço com as visitas!);
+        <br>
+        <br>
+        7) Elimina a inconveniente perda de sangue das cadelas no período de cio, assim como as desagradáveis reuniões de machos na porta de sua residência;
+        <br>
+        <br>
+        8) Diminuiu o hábito dos gatos de urinar em paredes e móveis para marcar território. A urina também perde o odor forte e desagradável.</p>
+      </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Sobre nós:</h2>
+      <p>Somos pessoas que estamos dispostas a ajudar
+          os animais, seja auxiliando com a divulgação dos bichinhos, quando precisarem
+        de um lar, ou mesmo quando os animais precisarem de medicamentos ou rações. </p>
+    </div>
+   
+    <div class="card">
+      <center><h3>Siga-nos</h3></center>
+      <a href="https://www.instagram.com/amordepatinhas2/">
+        <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Instagram.svg/1200px-Instagram.svg.png" width="850" height="380" alt="https://www.instagram.com/amordepatinhas2/" style="width:42px;height:42px;"></center>
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Informações:</h2>
+  <p> Telefone para contato: (81) 98818-8871</p>
+  <p> E-mail: vcsar22@gmail.com</p>
+  <p> Recife, PE</p>
+</div>
+
+</body>
+</html>
+
